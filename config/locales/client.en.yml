@@ -1,0 +1,4 @@
+en:
+  js:
+    restricted_replies:
+      for_category: Restrict replies to the topic creator, staff, and members of these groups
