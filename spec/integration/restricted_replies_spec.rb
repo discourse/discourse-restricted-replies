@@ -8,22 +8,22 @@ RSpec.describe "restricted_replies" do
   let(:admin) { Fabricate(:admin) }
   let(:user) { Fabricate(:user) }
   let(:topic) { Fabricate(:topic, category: category) }
+  let(:pm) { Fabricate(:private_message_topic) }
 
   before { group.add(user) }
 
   before { sign_in(user) }
 
-  def can_create_post
+  def can_create_post(t: topic)
     expect do
-      get "/t/#{topic.id}.json"
+      get "/t/#{t.id}.json"
       expect(JSON.parse(response.body)["details"]["can_create_post"]).to eq(true)
       post "/posts.json", params: {
         raw: 'this is test body',
-        category: category.slug,
-        topic_id: topic.id
+        topic_id: t.id
       }
       expect(response.status).to eq(200)
-    end.to change { topic.posts.count }.by 1
+    end.to change { t.posts.count }.by 1
   end
 
   def cannot_create_post
@@ -32,7 +32,6 @@ RSpec.describe "restricted_replies" do
     expect do
       post "/posts.json", params: {
         raw: 'this is test body',
-        category: category.slug,
         topic_id: topic.id
       }
       expect(response.status).to eq(422)
@@ -59,6 +58,11 @@ RSpec.describe "restricted_replies" do
       it "allows the OP to reply" do
         topic.update!(user: user)
         can_create_post
+      end
+
+      it "doesn't break PMs" do
+        sign_in(Fabricate(:admin))
+        can_create_post(t: pm)
       end
 
       it "always allows staff to post" do

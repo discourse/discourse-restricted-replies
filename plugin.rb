@@ -19,7 +19,8 @@ after_initialize do
     topic_overrides = Module.new do
       def can_create_post_on_topic?(topic)
         return super if !SiteSetting.restricted_replies_enabled
-        return super if !topic&.category.custom_fields["restrict_replies"]
+        return super if !(category = topic&.category)
+        return super if !category.custom_fields["restrict_replies"]
         default_value = super
         if default_value
           in_allowed_group = GroupUser.where(group_id: topic.category.custom_fields["restrict_replies_bypass_groups"], user_id: user.id).exists?
