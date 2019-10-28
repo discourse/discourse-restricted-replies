@@ -11,7 +11,7 @@ QUnit.test("Restricted Can open the category modal", async assert => {
   await click(".edit-category");
   assert.ok(visible(".d-modal"), "it pops up a modal");
 
-  await click("a.close");
+  await click("button.modal-close");
   assert.ok(!visible(".d-modal"), "it closes the modal");
 });
 
