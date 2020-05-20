@@ -8,7 +8,8 @@
     {{multi-select
           content=groups
           allowAny=false
-          values=category.custom_fields.restrict_replies_bypass_groups
+          value=category.custom_fields.restrict_replies_bypass_groups
+          onSelect=(action (mut category.custom_fields.restrict_replies_bypass_groups))
     }}
   {{/if}}
 </section>
