@@ -2,10 +2,10 @@ import selectKit from "helpers/select-kit-helper";
 import { acceptance } from "helpers/qunit-helpers";
 
 acceptance("Restricted Replies Category Edit", {
-  loggedIn: true
+  loggedIn: true,
 });
 
-QUnit.test("Restricted Can open the category modal", async assert => {
+QUnit.test("Restricted Can open the category modal", async (assert) => {
   await visit("/c/bug");
 
   await click(".edit-category");
@@ -15,7 +15,7 @@ QUnit.test("Restricted Can open the category modal", async assert => {
   assert.ok(!visible(".d-modal"), "it closes the modal");
 });
 
-QUnit.test("Restricted Editing the category", async assert => {
+QUnit.test("Restricted Editing the category", async (assert) => {
   await visit("/c/bug");
 
   await click(".edit-category");

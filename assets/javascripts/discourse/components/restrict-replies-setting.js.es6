@@ -4,5 +4,5 @@ export default Ember.Component.extend({
   @computed
   groups() {
     return Ember.makeArray(this.site.groups);
-  }
+  },
 });
