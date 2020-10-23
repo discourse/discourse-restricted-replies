@@ -5,21 +5,11 @@ acceptance("Restricted Replies Category Edit", {
   loggedIn: true,
 });
 
-QUnit.test("Restricted Can open the category modal", async (assert) => {
-  await visit("/c/bug");
-
-  await click(".edit-category");
-  assert.ok(visible(".d-modal"), "it pops up a modal");
-
-  await click("button.modal-close");
-  assert.ok(!visible(".d-modal"), "it closes the modal");
-});
-
 QUnit.test("Restricted Editing the category", async (assert) => {
   await visit("/c/bug");
 
-  await click(".edit-category");
-  await click(".edit-category-security");
+  await click("button.edit-category");
+  await click(".edit-category-security a");
 
   await click(".restrict-replies input[type=checkbox]");
 
@@ -28,6 +18,5 @@ QUnit.test("Restricted Editing the category", async (assert) => {
   await searchPriorityChooser.selectRowByValue(1);
 
   await click("#save-category");
-
-  assert.ok(!visible(".d-modal"), "it closes the modal");
+  assert.equal(currentURL(), "/c/bug/edit", "it stays on the edit screen");
 });
