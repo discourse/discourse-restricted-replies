@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 he:
+  js:
+    restricted_replies:
+      title: הגבלת תשובות
+      for_category: הגבלת תגובות ליוצר הפוסט, הסגל וחברי הקבוצות האלו

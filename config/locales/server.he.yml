@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 he:
+  site_settings:
+    restricted_replies_enabled: להפעיל תוסף תגובות מוגבלות?
