@@ -5,3 +5,6 @@
 # https://translate.discourse.org/
 
 fa_IR:
+  js:
+    restricted_replies:
+      title: محدود کردن پاسخ‌ها
