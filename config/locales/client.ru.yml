@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 ru:
+  js:
+    restricted_replies:
+      title: Ограничить ответы
+      for_category: Ограничить ответы создателю темы, сотрудникам и членам этих групп
