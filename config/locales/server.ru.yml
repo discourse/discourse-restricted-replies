@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 ru:
+  site_settings:
+    restricted_replies_enabled: Включен плагин ограниченных ответов?
