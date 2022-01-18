@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 it:
+  site_settings:
+    restricted_replies_enabled: Il plugin per limitare le risposte è abilitato?

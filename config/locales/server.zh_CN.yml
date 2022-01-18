@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 zh_CN:
+  site_settings:
+    restricted_replies_enabled: 启用了受限回复插件？

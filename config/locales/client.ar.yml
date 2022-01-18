@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 ar:
+  js:
+    restricted_replies:
+      title: تقييد الردود
+      for_category: تقييد الردود وقصرها على منشئ الموضوع وفريق العمل وأعضاء هذه المجموعات
