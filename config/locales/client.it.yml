@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 it:
+  js:
+    restricted_replies:
+      title: Limita le risposte
+      for_category: Limita le risposte al creatore dell'argomento, allo staff e ai membri di questi gruppi

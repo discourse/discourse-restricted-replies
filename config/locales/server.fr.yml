@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 fr:
+  site_settings:
+    restricted_replies_enabled: Extension de réponses restreintes activée ?

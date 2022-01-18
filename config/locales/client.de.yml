@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 de:
+  js:
+    restricted_replies:
+      title: Antworten einschränken
+      for_category: Antworten auf den Themenersteller, das Team und die Mitglieder dieser Gruppen beschränken

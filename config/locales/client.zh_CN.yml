@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 zh_CN:
+  js:
+    restricted_replies:
+      title: 限制回复
+      for_category: 限制对话题创建者、管理人员和这些群组的成员的回复

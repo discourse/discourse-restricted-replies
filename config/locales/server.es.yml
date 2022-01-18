@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 es:
+  site_settings:
+    restricted_replies_enabled: '¿Se ha habilitado el complemento de respuestas?'

@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 de:
+  site_settings:
+    restricted_replies_enabled: Plug-in für eingeschränkte Antworten aktiviert?
