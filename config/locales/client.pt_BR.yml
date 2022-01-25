@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 pt_BR:
+  js:
+    restricted_replies:
+      title: Restringir respostas
+      for_category: Restringir respostas ao(a) criador(a) do tópico, equipe e membros destes grupos

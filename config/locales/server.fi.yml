@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 fi:
+  site_settings:
+    restricted_replies_enabled: Otetaanko rajoitettujen vastausten lisäosa käyttöön?
