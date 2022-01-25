@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 ja:
+  js:
+    restricted_replies:
+      title: 返信の制限
+      for_category: これらのグループのトピック作成者、スタッフ、およびメンバーへの返信を制限します

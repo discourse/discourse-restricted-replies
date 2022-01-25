@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 ja:
+  site_settings:
+    restricted_replies_enabled: 制限付き返信プラグインを有効にしましたか？

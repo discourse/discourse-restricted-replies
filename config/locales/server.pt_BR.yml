@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 pt_BR:
+  site_settings:
+    restricted_replies_enabled: Plugin de respostas restritas ativado?
