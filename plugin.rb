@@ -5,6 +5,7 @@
 # version: 1.0
 # author: David Taylor
 # url: https://github.com/discourse/discourse-restricted-replies
+# transpile_js: true
 
 enabled_site_setting :restricted_replies_enabled
 
