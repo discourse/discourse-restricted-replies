@@ -1,8 +1,10 @@
-import { default as computed } from "discourse-common/utils/decorators";
+import Component from "@ember/component";
+import discourseComputed from "discourse-common/utils/decorators";
+import { makeArray } from "discourse-common/lib/helpers";
 
-export default Ember.Component.extend({
-  @computed
+export default Component.extend({
+  @discourseComputed
   groups() {
-    return Ember.makeArray(this.site.groups);
+    return makeArray(this.site.groups);
   },
 });
