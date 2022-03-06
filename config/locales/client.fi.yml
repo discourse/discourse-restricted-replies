@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 fi:
+  js:
+    restricted_replies:
+      title: Rajoita vastauksia
+      for_category: Rajoita vastaukset ketjun luojaan, henkilökuntaan ja näiden ryhmien jäseniin
