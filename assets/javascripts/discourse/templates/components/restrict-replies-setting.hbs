@@ -6,10 +6,12 @@
   </label>
   {{#if category.custom_fields.restrict_replies}}
     {{multi-select
-          content=groups
-          allowAny=false
-          value=category.custom_fields.restrict_replies_bypass_groups
-          onSelect=(action (mut category.custom_fields.restrict_replies_bypass_groups))
+      content=groups
+      allowAny=false
+      value=category.custom_fields.restrict_replies_bypass_groups
+      onSelect=(action
+        (mut category.custom_fields.restrict_replies_bypass_groups)
+      )
     }}
   {{/if}}
 </section>
