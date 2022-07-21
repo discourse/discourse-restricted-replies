@@ -23,13 +23,13 @@ describe CategoriesController do
         auto_close_hours: 72,
         custom_fields: {
           "restrict_replies": true,
-          "restrict_replies_bypass_groups" => [1,2]
+          "restrict_replies_bypass_groups" => [1, 2]
         }
       }
 
       expect(response.status).to eq(200)
       category.reload
-      expect(category.custom_fields).to eq("restrict_replies" => true, "restrict_replies_bypass_groups" => [1,2])
+      expect(category.custom_fields).to eq("restrict_replies" => true, "restrict_replies_bypass_groups" => [1, 2])
     end
   end
 end
