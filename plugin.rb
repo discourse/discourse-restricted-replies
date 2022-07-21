@@ -39,8 +39,10 @@ after_initialize do
       def category_params
         return super if !SiteSetting.restricted_replies_enabled
         super.tap do |value|
-          if params["custom_fields"] && groups = params["custom_fields"]["restrict_replies_bypass_groups"]
-            value["custom_fields"]["restrict_replies_bypass_groups"] = groups
+          if params["custom_fields"] && value["custom_fields"] && groups = params["custom_fields"]["restrict_replies_bypass_groups"]
+            custom_fields = value["custom_fields"].to_unsafe_h
+            custom_fields["restrict_replies_bypass_groups"] = groups
+            value.merge!(custom_fields: custom_fields)
           end
         end
       end
