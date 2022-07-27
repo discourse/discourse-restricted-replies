@@ -34,22 +34,5 @@ after_initialize do
     Guardian.class_exec do
       prepend topic_overrides
     end
-
-    category_overrides = Module.new do
-      def category_params
-        return super if !SiteSetting.restricted_replies_enabled
-        super.tap do |value|
-          if params["custom_fields"] && value["custom_fields"] && groups = params["custom_fields"]["restrict_replies_bypass_groups"]
-            custom_fields = value["custom_fields"].to_unsafe_h
-            custom_fields["restrict_replies_bypass_groups"] = groups
-            value.merge!(custom_fields: custom_fields)
-          end
-        end
-      end
-    end
-
-    CategoriesController.class_exec do
-      prepend category_overrides
-    end
   end
 end
