@@ -35,7 +35,7 @@ RSpec.describe "restricted_replies" do
         topic_id: topic.id
       }
       expect(response.status).to eq(422)
-    end.to change { topic.posts.count }.by 0
+    end.not_to change { topic.posts.count }
   end
 
   describe "guardian logic" do
