@@ -4,7 +4,7 @@ describe CategoriesController do
   let(:admin) { Fabricate(:admin) }
   let!(:category) { Fabricate(:category, user: admin) }
 
-  context '#update' do
+  describe '#update' do
     before do
       SiteSetting.restricted_replies_enabled = true
       sign_in(admin)
