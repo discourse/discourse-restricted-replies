@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 nl:
+  js:
+    restricted_replies:
+      title: Antwoorden beperken
+      for_category: Beperk antwoorden tot de maker van het topic, medewerkers en leden van deze groepen

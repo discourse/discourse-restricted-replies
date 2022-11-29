@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 nl:
+  site_settings:
+    restricted_replies_enabled: Plug-in Antwoorden beperken inschakelen?
