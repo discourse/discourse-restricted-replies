@@ -1,6 +1,6 @@
 # frozen_string_literal: true
 
-require 'rails_helper'
+require "rails_helper"
 
 RSpec.describe "restricted_replies" do
   let(:category) { Fabricate(:category) }
@@ -18,10 +18,7 @@ RSpec.describe "restricted_replies" do
     expect do
       get "/t/#{t.id}.json"
       expect(JSON.parse(response.body)["details"]["can_create_post"]).to eq(true)
-      post "/posts.json", params: {
-        raw: 'this is test body',
-        topic_id: t.id
-      }
+      post "/posts.json", params: { raw: "this is test body", topic_id: t.id }
       expect(response.status).to eq(200)
     end.to change { t.posts.count }.by 1
   end
@@ -30,10 +27,7 @@ RSpec.describe "restricted_replies" do
     get "/t/#{topic.id}.json"
     expect(JSON.parse(response.body)["details"]["can_create_post"]).to eq(nil)
     expect do
-      post "/posts.json", params: {
-        raw: 'this is test body',
-        topic_id: topic.id
-      }
+      post "/posts.json", params: { raw: "this is test body", topic_id: topic.id }
       expect(response.status).to eq(422)
     end.not_to change { topic.posts.count }
   end
@@ -76,6 +70,5 @@ RSpec.describe "restricted_replies" do
         can_create_post
       end
     end
-
   end
 end
