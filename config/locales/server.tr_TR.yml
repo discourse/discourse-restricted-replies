@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 tr_TR:
+  site_settings:
+    restricted_replies_enabled: Kısıtlı yanıtlar eklentisi etkinleştirildi mi?

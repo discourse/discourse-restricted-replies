@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 tr_TR:
+  js:
+    restricted_replies:
+      title: Yanıtları Kısıtla
+      for_category: Yanıtları konu oluşturucu, personel ve bu grupların üyeleriyle sınırlandırın
