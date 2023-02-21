@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 fa_IR:
+  site_settings:
+    restricted_replies_enabled: افزونه محدود کردن پاسخ‌ها فعال شده؟
