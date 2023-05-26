@@ -1,7 +1,10 @@
 <section class="field restrict-replies">
   <h3>{{i18n "restricted_replies.title"}}</h3>
   <label>
-    {{input type="checkbox" checked=category.custom_fields.restrict_replies}}
+    <Input
+      @type="checkbox"
+      @checked={{category.custom_fields.restrict_replies}}
+    />
     {{i18n "restricted_replies.for_category"}}
   </label>
   {{#if category.custom_fields.restrict_replies}}
