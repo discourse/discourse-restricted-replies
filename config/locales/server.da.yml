@@ -5,3 +5,5 @@
 # https://translate.discourse.org/
 
 da:
+  site_settings:
+    restricted_replies_enabled: Aktiverede begrænsede svar plugin?
