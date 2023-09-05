@@ -5,3 +5,7 @@
 # https://translate.discourse.org/
 
 da:
+  js:
+    restricted_replies:
+      title: Begræns Svar
+      for_category: Begræns svar til emneopretteren, personalet og medlemmer af disse grupper
