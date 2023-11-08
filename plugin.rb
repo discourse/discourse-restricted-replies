@@ -1,7 +1,8 @@
 # frozen_string_literal: true
 
 # name: discourse-restricted-replies
-# about: Restrict replies in certain categories to the OP and specified groups
+# about: Restricts replies in certain categories to the OP and specified groups.
+# meta_topic_id: 131343
 # version: 1.0
 # author: David Taylor
 # url: https://github.com/discourse/discourse-restricted-replies
