@@ -6,7 +6,7 @@ RSpec.describe "restricted_replies" do
   let(:category) { Fabricate(:category) }
   let(:group) { Fabricate(:group) }
   let(:admin) { Fabricate(:admin) }
-  let(:user) { Fabricate(:user) }
+  let(:user) { Fabricate(:user, refresh_auto_groups: true) }
   let(:topic) { Fabricate(:topic, category: category) }
   let(:pm) { Fabricate(:private_message_topic) }
 
