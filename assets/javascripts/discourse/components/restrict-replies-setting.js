@@ -1,6 +1,6 @@
 import Component from "@ember/component";
-import discourseComputed from "discourse-common/utils/decorators";
 import { makeArray } from "discourse-common/lib/helpers";
+import discourseComputed from "discourse-common/utils/decorators";
 
 export default Component.extend({
   @discourseComputed

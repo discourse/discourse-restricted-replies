@@ -1,7 +1,7 @@
-import selectKit from "discourse/tests/helpers/select-kit-helper";
-import { acceptance } from "discourse/tests/helpers/qunit-helpers";
 import { click, currentURL, visit } from "@ember/test-helpers";
 import { test } from "qunit";
+import { acceptance } from "discourse/tests/helpers/qunit-helpers";
+import selectKit from "discourse/tests/helpers/select-kit-helper";
 
 acceptance("Restricted Replies Category Edit", function (needs) {
   needs.user();
