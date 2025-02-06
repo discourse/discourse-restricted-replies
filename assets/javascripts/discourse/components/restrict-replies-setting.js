@@ -1,6 +1,6 @@
 import Component from "@ember/component";
-import { makeArray } from "discourse-common/lib/helpers";
-import discourseComputed from "discourse-common/utils/decorators";
+import discourseComputed from "discourse/lib/decorators";
+import { makeArray } from "discourse/lib/helpers";
 
 export default class RestrictRepliesSetting extends Component {
   @discourseComputed
