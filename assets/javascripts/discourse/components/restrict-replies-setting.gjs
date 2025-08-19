@@ -1,4 +1,5 @@
 import Component, { Input } from "@ember/component";
+import { fn } from "@ember/helper";
 import discourseComputed from "discourse/lib/decorators";
 import { makeArray } from "discourse/lib/helpers";
 import { i18n } from "discourse-i18n";
@@ -25,7 +26,7 @@ export default class RestrictRepliesSetting extends Component {
           @content={{this.groups}}
           @allowAny={{false}}
           @value={{this.category.custom_fields.restrict_replies_bypass_groups}}
-          @onSelect={{action
+          @onSelect={{fn
             (mut this.category.custom_fields.restrict_replies_bypass_groups)
           }}
         />
