@@ -1,7 +1,5 @@
 # frozen_string_literal: true
 
-require "rails_helper"
-
 RSpec.describe "restricted_replies" do
   let(:category) { Fabricate(:category) }
   let(:group) { Fabricate(:group) }
