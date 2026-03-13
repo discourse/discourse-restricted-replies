@@ -1,13 +1,14 @@
+/* eslint-disable ember/no-classic-components, ember/require-tagless-components */
 import Component, { Input } from "@ember/component";
 import { fn } from "@ember/helper";
-import discourseComputed from "discourse/lib/decorators";
+import { computed } from "@ember/object";
 import { makeArray } from "discourse/lib/helpers";
+import MultiSelect from "discourse/select-kit/components/multi-select";
 import { i18n } from "discourse-i18n";
-import MultiSelect from "select-kit/components/multi-select";
 
 export default class RestrictRepliesSetting extends Component {
-  @discourseComputed
-  groups() {
+  @computed
+  get groups() {
     return makeArray(this.site.groups);
   }
 
