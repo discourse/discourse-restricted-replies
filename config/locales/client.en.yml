@@ -3,3 +3,4 @@ en:
     restricted_replies:
       title: Restrict Replies
       for_category: Restrict replies to the topic creator, staff, and members of these groups
+      bypass_groups: Groups that can bypass reply restrictions
