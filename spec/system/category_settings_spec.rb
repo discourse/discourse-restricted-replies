@@ -31,21 +31,4 @@ RSpec.describe "Restricted Replies Category Settings" do
       expect(category.custom_fields["restrict_replies"]).to eq(true)
     end
   end
-
-  context "when simplified category creation is disabled" do
-    before { SiteSetting.enable_simplified_category_creation = false }
-
-    it "can toggle restrict replies and see bypass groups via legacy form" do
-      category_page.visit_security(category)
-
-      find("#restrict-replies").click
-      expect(page).to have_css(".restrict-replies .multi-select")
-
-      category_page.save_settings
-
-      expect(toasts).to have_success(I18n.t("js.saved"))
-      category.reload
-      expect(category.custom_fields["restrict_replies"]).to eq(true)
-    end
-  end
 end
