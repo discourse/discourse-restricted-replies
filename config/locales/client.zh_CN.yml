@@ -9,3 +9,4 @@ zh_CN:
     restricted_replies:
       title: 限制回复
       for_category: 限制对话题创建者、管理人员和这些群组的成员的回复
+      bypass_groups: 可以绕过回复限制的群组
