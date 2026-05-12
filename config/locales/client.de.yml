@@ -9,3 +9,4 @@ de:
     restricted_replies:
       title: Antworten einschränken
       for_category: Antworten auf den Themenersteller, das Team und die Mitglieder dieser Gruppen beschränken
+      bypass_groups: Gruppen, die die Antwortbeschränkungen umgehen können
