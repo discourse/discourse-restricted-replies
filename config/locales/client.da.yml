@@ -9,3 +9,4 @@ da:
     restricted_replies:
       title: Begræns Svar
       for_category: Begræns svar til emneopretteren, personalet og medlemmer af disse grupper
+      bypass_groups: Grupper som kan omgå svarbegrænsninger
