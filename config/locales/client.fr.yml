@@ -9,3 +9,4 @@ fr:
     restricted_replies:
       title: Limiter les réponses
       for_category: Limiter les réponses au créateur du sujet, au personnel et aux membres de ces groupes
+      bypass_groups: Groupes exemptés des restrictions de réponse
